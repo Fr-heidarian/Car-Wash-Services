@@ -13,3 +13,20 @@
   font-size: 0.75rem;
 }
 
+/* HERO SECTION */
+#hero {
+  background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
+    url(../images/hero-header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#hero h1 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+}
+.hero-header button {
+  background-color: var(--primary);
+}
