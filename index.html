@@ -25,9 +25,11 @@
         <div class="row align-items-center justify-content-between p-2">
             <div class="col-lg-8 fs-6">
                 <div>
-                    <small class="me-3 text-light"><i class="fa fa-location me-2"></i>123 street,New York USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+014 234 8764</small>
-                    <small class="me-3 text-light"><i class="fa fa-clock me-2"></i>09.00 - 21.00</small>
+                    <small class="me-3 text-light"><i class="fa fa-location me-2 text-success"></i>123 street,New York
+                        USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2 text-success"></i>+014 234
+                        8764</small>
+                    <small class="me-3 text-light"><i class="fa fa-clock me-2 text-success"></i>09.00 - 21.00</small>
                 </div>
             </div>
             <div class="col-md-4 text-end">
@@ -46,6 +48,26 @@
     <!-- HERO SECTION STARTS -->
     <section id="hero">
         <div class="container-fluid">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="#">LOGO.</a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto" style="font-weight: 700;">
+                            <a class="nav-link active text-success fs-5 fw-bold" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white mx-3 fs-5" href="#">Features</a>
+                            <a class="nav-link text-white fs-5" href="#">Pricing</a>
+                            <a class="nav-link text-white mx-3 fs-5" aria-disabled="true">Disabled</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr class="text-white">
             <div class="hero-header">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -54,20 +76,87 @@
                             <h5 class=" fs-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit
                                 Aspernatur.</h5>
                             <div class="w-75 mx-auto position-relative">
-                                <input type="text"
+                                <input type="text" id="searchInput"
                                     class="form-control form-control-lg rounded-pill py-2 shadow-none border-0 fs-6"
                                     placeholder="Car Wash Services">
                                 <button type="button"
                                     class="btn text-white rounded-pill position-absolute top-0 end-0 py-1 px-4 me-2"
-                                    style="margin-top: 0.25rem;">Search</button>
+                                    id="activateButton" style="margin-top: 0.25rem;">Search</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- service-box -->
+            <div class="container">
+                <div class="row service-box">
+                    <div class="col-md-4 rounded-start d-flex flex-column justify-content-center s-box-left">
+                        <div class="s-box-left-content p-3">
+                            <small class="me-3 mb-4 fs-6 fw-bold d-flex align-items-center"><i
+                                    class="fa fa-phone-alt me-2 rounded-circle bg-success p-3 text-center"></i>CUSTOMER
+                                SERVICES<br>
+                                (+014) 234
+                                8764</small>
+                            <small class="me-3 fs-6 fw-bold d-flex align-items-center"><i
+                                    class="fa fa-location me-2 rounded-circle bg-success p-3"></i>SEND A
+                                MESSAGE<br>lorem@loremipsum.com</small>
+                        </div>
+                    </div>
+                    <div class="col-md-8 rounded-end s-box-right text-white">
+                        <div class="row align-items-center justify-content-center p-3">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="inputBox" class="form-label">Name</label>
+                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                        placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="inputBox" class="form-label">Phone</label>
+                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                        placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="inputBox" class="form-label">Services</label>
+                                    <select name="" id="" class="form-select rounded-pill">
+                                        <option value="" class="selected">Exterior Polish</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center p-3">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="inputBox" class="form-label">Date</label>
+                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                        placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="inputBox" class="form-label">Time</label>
+                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                        placeholder="--:-- --">
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <button
+                                    class="btn service-box-btn rounded-pill w-100 bg-dark text-white mt-3 pt-2 fw-bold">BOOKING
+                                    NOW!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
     <!-- HERO SECTION ENDS -->
 
@@ -75,13 +164,16 @@
     <section id="about-us">
         <div class="container">
             <!-- title -->
-            <div class="section-title text-center position-relative">
-                <h1 class="">WHO IS LOREM</h1>
+            <div class="section-title text-center">
+                <h1 class="position-relative">WHO IS LOREM</h1>
                 <h5 class="mt-4 mb-5">Lorem ipsum dolor sit amet.</h5>
             </div>
             <div class="row align-items-start gx-5">
                 <div class="col-lg-5">
-                    <img src="assets/images/about-us.jpg" class="img-fluid rounded" alt="about-us-image">
+                    <div class="image-border">
+                        <img src="assets/images/about-us.jpg" class="img-fluid" alt="about-us-image">
+                    </div>
+
                 </div>
                 <div class="col-lg-7 text-start about-us-content">
                     <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos libero maiores
@@ -124,6 +216,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

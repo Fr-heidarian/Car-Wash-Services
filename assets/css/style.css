@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@300;500;700&display=swap");
 
 :root {
-  --primary: #86b817;
-  --secondary: #fe8800;
+  --primary: rgb(134, 184, 23);
+  --secondary: rgb(254, 136, 0);
   --light: #f5f5f5;
-  --dark: #14141f;
+  --dark: rgb(20, 20, 31);
+  --text-primary: rgb(109, 109, 109);
 }
 p {
   color: var(--dark);
@@ -36,7 +37,7 @@ p {
 
 /* ABOUT US SECTION */
 #about-us {
-  margin: 5rem auto;
+  margin: 16rem auto;
 }
 #about-us h1 {
   color: var(--primary);
@@ -77,8 +78,26 @@ p {
   color: var(--primary);
 }
 .about-us-content p {
-  color: #6d6d6d;
+  color: var(--text-primary);
 }
-.about-us-content h6{
-    letter-spacing: 0.15rem;
+.about-us-content h6 {
+  letter-spacing: 0.15rem;
+}
+.image-border {
+  box-shadow: rgba(109, 109, 109, 0.4) -5px 5px,
+    rgba(109, 109, 109, 0.3) -10px 10px, rgba(109, 109, 109, 0.2) -15px 15px,
+    rgba(254, 136, 0, 0.1) -20px 20px, rgba(254, 136, 0, 0.05) -25px 25px;
+}
+/* service-box */
+
+#hero .s-box-left {
+  background: linear-gradient(rgba(134, 184, 23, 0.7), rgba(109, 109, 109, 0.9)),
+    url(../images/about-us.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--light);
+}
+#hero .s-box-right {
+  background-color: var(--text-primary) !important;
 }
