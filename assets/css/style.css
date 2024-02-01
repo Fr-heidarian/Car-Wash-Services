@@ -34,12 +34,25 @@ p {
 .hero-header button {
   background-color: var(--primary);
 }
+/* service-box */
 
+#hero .s-box-left {
+  background: linear-gradient(rgba(134, 184, 23, 0.7), rgba(109, 109, 109, 0.9)),
+    url(../images/about-us.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--light);
+}
+#hero .s-box-right {
+  background-color: var(--text-primary) !important;
+}
 /* ABOUT US SECTION */
 #about-us {
-  margin: 16rem auto;
+  margin: 16rem 0 6rem;
 }
-#about-us h1 {
+#about-us h1,
+#services h1 {
   color: var(--primary);
   font-size: 2rem;
 }
@@ -63,7 +76,7 @@ p {
   content: "";
   display: inline-block;
   width: 4rem;
-  height: 0.15rem;
+  height: 0.16rem;
   background-color: var(--secondary);
   margin-left: 10px;
   vertical-align: baseline;
@@ -87,17 +100,24 @@ p {
   box-shadow: rgba(109, 109, 109, 0.4) -5px 5px,
     rgba(109, 109, 109, 0.3) -10px 10px, rgba(109, 109, 109, 0.2) -15px 15px,
     rgba(254, 136, 0, 0.1) -20px 20px, rgba(254, 136, 0, 0.05) -25px 25px;
-}
-/* service-box */
-
-#hero .s-box-left {
-  background: linear-gradient(rgba(134, 184, 23, 0.7), rgba(109, 109, 109, 0.9)),
-    url(../images/about-us.jpg);
-  background-position: center center;
+  background-image: url(../images/about-us.jpg);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--light);
+  width: 100%;
+  height: 600px;
 }
-#hero .s-box-right {
-  background-color: var(--text-primary) !important;
+/* SERVICES SECTION */
+#services .service-items {
+  border: 1px dashed var(--primary);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  padding: 40px;
+}
+#services .service-items img {
+  left: 5px;
+  top: 5px;
+}
+.media-body{
+  font-size: 1rem;
 }

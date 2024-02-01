@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  /* #HERO .SERVICE_BOX */
+  .service-box .row {
+    padding: 0 0.25rem !important;
+  }
+  .service-box input::placeholder,
+  .service-box select {
+    font-size: 0.75rem;
+  }
+  .service-box .col-md-4,
+  .service-box .col-md-4 small {
+    border-radius: 5px 5px 0 0 !important;
+    font-size: 0.75rem !important;
+  }
+  .service-box .col-md-8 {
+    border-radius: 0 0 5px 5px !important;
+  }
+  /* #ABOUT-US */
+  #about-us {
+    margin-top: 35rem;
+    padding: 1rem;
+  }
+  .section-title h1::before {
+    top: 1.15rem;
+    left: 19.77rem;
+  }
+  .image-border {
+    height: 300px;
+    margin: 0.5rem 1rem 2rem;
+  }
+  .about-us-content .icon-top,
+  .about-us-content h6 {
+    font-size: 1rem;
+    margin: 0.75rem 0.5rem;
+    display: inline;
+  }
+  .about-us-content p {
+    margin: 1rem 0.5rem;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+  }
+}
