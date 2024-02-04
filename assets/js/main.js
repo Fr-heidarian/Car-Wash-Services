@@ -10,4 +10,31 @@ $(document).ready(function () {
     autoPlay: true,
   });
 });
+// animation
 
+
+window.addEventListener("scroll", () => {
+  const [titleElements, colElements] = [
+    [...document.querySelectorAll(".section-title h1")],
+    [...document.querySelectorAll(".col")],
+  ];
+
+  const applyAnimation = (elements, className, condition) => {
+    elements.forEach((element) => {
+      const position = element.getBoundingClientRect();
+      element.classList.toggle(className, condition(position));
+    });
+  };
+
+  applyAnimation(
+    titleElements,
+    "animate",
+    (position) => position.top < window.innerHeight && position.bottom >= 0
+  );
+
+  applyAnimation(
+    colElements,
+    "active",
+    (position) => position.top < window.innerHeight && position.bottom >= 0
+  );
+});

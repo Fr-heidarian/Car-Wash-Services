@@ -197,3 +197,33 @@ p {
 .owl-theme .owl-controls .owl-page.active span {
   background: var(--secondary);
 }
+/* animation */
+.section-title h1 {
+  position: relative;
+  top: 4.5rem;
+}
+
+.animate {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+  from {
+    top: 4.5rem;
+  }
+  to {
+    top: 0;
+  }
+}
+.col {
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.col.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
