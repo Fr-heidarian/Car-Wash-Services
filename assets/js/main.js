@@ -1,4 +1,4 @@
-// testimonial
+// TESTIMONIALS
 $(document).ready(function () {
   $("#testimonial-slider").owlCarousel({
     items: 1,
@@ -10,8 +10,35 @@ $(document).ready(function () {
     autoPlay: true,
   });
 });
-// animation
 
+// ANIMATION
+
+// window.addEventListener("scroll", () => {
+//   const titleElements = document.querySelectorAll(".section-title h1");
+//   const colElements = document.querySelectorAll("img");
+
+//   titleElements.forEach((element) => {
+//     const position = element.getBoundingClientRect();
+
+//     // Check if the element is in the viewport
+//     if (position.top < window.innerHeight && position.bottom >= 0) {
+//       element.classList.add("animate");
+//     } else {
+//       element.classList.remove("animate");
+//     }
+//   });
+
+//   colElements.forEach((element) => {
+//     const position = element.getBoundingClientRect();
+
+//     // Check if the element is in the viewport
+//     if (position.top < window.innerHeight && position.bottom >= 0) {
+//       element.classList.add("active");
+//     } else {
+//       element.classList.remove("active");
+//     }
+//   });
+// });
 
 window.addEventListener("scroll", () => {
   const [titleElements, colElements] = [

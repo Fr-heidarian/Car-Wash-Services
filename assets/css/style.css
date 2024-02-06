@@ -53,7 +53,8 @@ p {
   margin: 16rem 0 6rem;
 }
 #about-us h1,
-#services h1 {
+#services h1,
+#book h1 {
   color: var(--primary);
   font-size: 2rem;
 }
@@ -125,7 +126,7 @@ p {
 .media-body {
   font-size: 1rem;
 }
-/* testimonial */
+/* testimonials */
 #testimonial {
   background: #3d3d3d;
 }
@@ -197,7 +198,7 @@ p {
 .owl-theme .owl-controls .owl-page.active span {
   background: var(--secondary);
 }
-/* animation */
+/* animation headers and img*/
 .section-title h1 {
   position: relative;
   top: 4.5rem;
@@ -226,4 +227,40 @@ p {
   opacity: 1;
   transform: translateX(0);
 }
-
+/* BOOKING SECTION */
+#book {
+  margin-bottom: 5rem;
+}
+#book .book-header {
+  padding-top: 4rem ;
+}
+#book .book-header button {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+#book .row {
+  width: 100%;
+}
+#book .book-background {
+  background-image: url(../images/book.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#book .section-title h1::before {
+  top: 1.15rem;
+  right: 27.75rem;
+}
+#book i {
+  padding: 0.75rem 0.84rem;
+  font-size: 0.85rem;
+}
+#book span {
+  padding: 2rem 1.5rem;
+}
+#book .book-background .row {
+  bottom: 8rem;
+  left: 0rem;
+}
