@@ -46,8 +46,8 @@
   #book .book-background {
     position: relative !important;
     padding-top: 3rem;
-    height: 150vh;
   }
+
   #book .row {
     position: absolute !important;
     top: 10rem !important;
@@ -57,4 +57,9 @@
     padding: 0;
     border: none !important;
   }
+  #book p {
+    margin-top: 1rem !important;
+    font-size: 1rem !important;
+  }
+
 }

@@ -11,34 +11,7 @@ $(document).ready(function () {
   });
 });
 
-// ANIMATION
 
-// window.addEventListener("scroll", () => {
-//   const titleElements = document.querySelectorAll(".section-title h1");
-//   const colElements = document.querySelectorAll("img");
-
-//   titleElements.forEach((element) => {
-//     const position = element.getBoundingClientRect();
-
-//     // Check if the element is in the viewport
-//     if (position.top < window.innerHeight && position.bottom >= 0) {
-//       element.classList.add("animate");
-//     } else {
-//       element.classList.remove("animate");
-//     }
-//   });
-
-//   colElements.forEach((element) => {
-//     const position = element.getBoundingClientRect();
-
-//     // Check if the element is in the viewport
-//     if (position.top < window.innerHeight && position.bottom >= 0) {
-//       element.classList.add("active");
-//     } else {
-//       element.classList.remove("active");
-//     }
-//   });
-// });
 
 window.addEventListener("scroll", () => {
   const [titleElements, colElements] = [
@@ -65,3 +38,6 @@ window.addEventListener("scroll", () => {
     (position) => position.top < window.innerHeight && position.bottom >= 0
   );
 });
+
+
+

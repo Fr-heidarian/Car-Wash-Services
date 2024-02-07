@@ -54,7 +54,8 @@ p {
 }
 #about-us h1,
 #services h1,
-#book h1 {
+#book h1,
+#gallery h1 {
   color: var(--primary);
   font-size: 2rem;
 }
@@ -232,7 +233,7 @@ p {
   margin-bottom: 5rem;
 }
 #book .book-header {
-  padding-top: 4rem ;
+  padding-top: 4rem;
 }
 #book .book-header button {
   border: 2px solid var(--primary);
@@ -258,9 +259,22 @@ p {
   font-size: 0.85rem;
 }
 #book span {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 0.85rem;
 }
 #book .book-background .row {
   bottom: 8rem;
   left: 0rem;
 }
+/* GALLERY SECTION */
+#gallery .section-title h1::before {
+  top: 1.15rem;
+  right: 26.5rem;
+}
+
+.col-md-4 img {
+  width: 100%;
+  height: 300px;
+}
+
+
+
