@@ -10,9 +10,7 @@ $(document).ready(function () {
     autoPlay: true,
   });
 });
-
-
-
+// SCROLL ANIMATION
 window.addEventListener("scroll", () => {
   const [titleElements, colElements] = [
     [...document.querySelectorAll(".section-title h1")],
@@ -39,5 +37,4 @@ window.addEventListener("scroll", () => {
   );
 });
 
-
-
+// gallery
