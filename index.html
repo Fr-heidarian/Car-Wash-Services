@@ -67,14 +67,14 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav mx-auto" style="font-weight: 700;">
                             <a class="nav-link active text-success fs-5 fw-bold" aria-current="page" href="#">Home</a>
-                            <a class="nav-link text-white mx-3 fs-5" href="#">Features</a>
-                            <a class="nav-link text-white fs-5" href="#">Pricing</a>
-                            <a class="nav-link text-white mx-3 fs-5" aria-disabled="true">Disabled</a>
+                            <a class="nav-link text-white mx-3 fs-5" href="#">Services</a>
+                            <a class="nav-link text-white fs-5" href="#">Gallery</a>
+                            <a class="nav-link text-white mx-3 fs-5">Testimonials</a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <hr class="text-white">
+            <hr class="text-white ms-2">
             <div class="hero-header">
                 <div class="container py-5">
                     <div class="row justify-content-center py-5">
@@ -86,9 +86,11 @@
                                 <input type="text" id="searchInput"
                                     class="form-control form-control-lg rounded-pill py-2 shadow-none border-0 fs-6"
                                     placeholder="Car Wash Services">
-                                <button type="button"
+                                <button class="roll-text btn rounded-pill position-absolute top-0 end-0 py-2 px-4 me-2"
+                                    style="margin-top: 0.35rem;">Search</button>
+                                <!-- <button type="button roll-text"
                                     class="btn text-white rounded-pill position-absolute top-0 end-0 py-1 px-4 me-2"
-                                    id="activateButton" style="margin-top: 0.25rem;">Search</button>
+                                    id="activateButton" style="margin-top: 0.25rem;">Search</button> -->
                             </div>
                         </div>
                     </div>
@@ -143,21 +145,19 @@
                             <div class="col-md-4">
                                 <div class="mb-3">
                                     <label for="inputBox" class="form-label">Date</label>
-                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                    <input type="date" class="form-control rounded-pill" id="inputBox"
                                         placeholder="mm/dd/yyyy">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3">
                                     <label for="inputBox" class="form-label">Time</label>
-                                    <input type="text" class="form-control rounded-pill" id="inputBox"
+                                    <input type="time" class="form-control rounded-pill" id="inputBox"
                                         placeholder="--:-- --">
                                 </div>
                             </div>
-                            <div class="col-md-4 p-3">
-                                <button
-                                    class="btn service-box-btn rounded-pill w-100 bg-dark text-white mt-3 pt-2 fw-bold">BOOKING
-                                    NOW!</button>
+                            <div class="col-md-4">
+                                <button class="roll-text mt-3 pt-2 fw-bold w-100">Booking&nbsp;&nbsp;Now&nbsp;!</button>
                             </div>
                         </div>
                     </div>
@@ -366,9 +366,9 @@
 
     <!-- BOOK SECTION STARTS -->
     <section id="book" class="position-relative">
-        <div class="book-header d-flex justify-content-center bg-light p-5">
+        <div class="book-header d-flex justify-content-center align-items-center bg-light p-5">
             <h2>CAR WASH BOOKING SYSTEM</h2>
-            <button class="btn rounded-pill ms-5">Book Appointment</button>
+            <button class="roll-text ms-5">Book&nbsp;&nbsp;Appointment</button>
         </div>
         <div class="book-background">
             <div class="container">
@@ -379,21 +379,21 @@
                 </div>
                 <div class="row align-items-start justify-content-center mx-5 position-absolute">
                     <div class="col-md-2 col-6 text-center">
-                        <span class="rounded-circle border"><i
+                        <span class="rounded-circle border book-span"><i
                                 class="fas fa-check rounded-circle border border-2 text-white"></i></span>
                         <p class="text-white fs-5 text-spacing fw-bold mt-5">1. BOOKING</p>
                     </div>
                     <div class="col-md-1 col-6 pt-1"><i class="bi bi-arrow-right rounded-circle border text-white"></i>
                     </div>
                     <div class="col-md-2 col-6 text-center">
-                        <span class="rounded-circle border"><i
+                        <span class="rounded-circle border book-span"><i
                                 class="fas fa-check rounded-circle border border-2 text-white"></i></span>
                         <p class="text-white text-spacing fw-bold fs-5 mt-5">2. INSPECTION</p>
                     </div>
                     <div class="col-md-1 col-6"><i class="bi bi-arrow-right rounded-circle border text-white"></i>
                     </div>
                     <div class="col-md-2 col-6 text-center">
-                        <span class="rounded-circle border"><i
+                        <span class="rounded-circle border book-span"><i
                                 class="fas fa-check rounded-circle border border-2 text-white"></i></span>
 
                         <p class="text-white fs-5 mt-5 text-spacing fw-bold">3. VALUATION</p>
@@ -401,7 +401,7 @@
                     <div class="col-md-1 col-6"><i class="bi bi-arrow-right rounded-circle border text-white"></i>
                     </div>
                     <div class="col-md-2 col-6 text-center">
-                        <span class="rounded-circle border"><i
+                        <span class="rounded-circle border book-span"><i
                                 class="fas fa-check rounded-circle border border-2 text-white"></i></span>
                         <p class="text-white fs-5 mt-5 text-spacing fw-bold">4. COMPLETION</p>
                     </div>
@@ -455,7 +455,7 @@
             <!-- tab content -->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                    <div class="row my-5 g-4">
+                    <div class="row my-5 g-5">
                         <div class="col col-12 col-md-4">
                             <div class="card border-0 border-0 rounded" id="1">
                                 <img src="assets/images/about-us.jpg" alt="" class="rounded  slide-in-diagonal-1">
@@ -604,8 +604,6 @@
 
 
 
-
-
     <!-- Owl-carousel Links -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript"
@@ -616,6 +614,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>

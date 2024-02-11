@@ -16,7 +16,10 @@ p {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
 }
-
+.top-navbar-icons a:hover {
+  background-color: var(--primary);
+  border: none;
+}
 /* HERO SECTION */
 #hero {
   background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
@@ -235,10 +238,6 @@ p {
 #book .book-header {
   padding-top: 4rem;
 }
-#book .book-header button {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-}
 #book .row {
   width: 100%;
 }
@@ -258,7 +257,7 @@ p {
   padding: 0.75rem 0.84rem;
   font-size: 0.85rem;
 }
-#book span {
+#book span.book-span {
   padding: 1.5rem 0.85rem;
 }
 #book .book-background .row {
@@ -357,3 +356,113 @@ p {
     transform: translate(0, 0);
   }
 }
+
+/* BUTTON ANIMATION STARTS */
+button.roll-text {
+  --shadow: 0 2px 8px -1px rgba(21, 25, 36, 0.32);
+  --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
+}
+
+button.roll-text {
+  --font-size: 16px;
+  --duration: 0.44s;
+  --move-hover: -4px;
+  --font-shadow: var(--font-size);
+  padding: 16px 32px;
+  font-weight: 500;
+  line-height: var(--font-size);
+  border-radius: 24px;
+  border: none;
+  font-size: var(--font-size);
+  background: var(--primary);
+  color: var(--light);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y)) translateZ(0);
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+}
+
+button.roll-text div {
+  display: flex;
+  overflow: hidden;
+  text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+
+button.roll-text span {
+  transition: transform var(--duration) ease;
+  transform: translateY(var(--m)) translateZ(0);
+}
+
+button.roll-text span:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+button.roll-text span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+button.roll-text span:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+button.roll-text span:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+button.roll-text span:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+button.roll-text span:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+button.roll-text span:nth-child(7) {
+  transition-delay: 0.35s;
+}
+
+button.roll-text span:nth-child(8) {
+  transition-delay: 0.05s;
+}
+
+button.roll-text span:nth-child(9) {
+  transition-delay: 0.1s;
+}
+
+button.roll-text span:nth-child(10) {
+  transition-delay: 0.15s;
+}
+
+button.roll-text span:nth-child(11) {
+  transition-delay: 0.2s;
+}
+
+button.roll-text span:nth-child(12) {
+  transition-delay: 0.25s;
+}
+
+button.roll-text span:nth-child(13) {
+  transition-delay: 0.3s;
+}
+
+button.roll-text span:nth-child(14) {
+  transition-delay: 0.35s;
+}
+button.roll-text span:nth-child(15) {
+  transition-delay: 0.15s;
+}
+
+button.roll-text span:nth-child(16) {
+  transition-delay: 0.3s;
+}
+
+button.roll-text span:nth-child(17) {
+  transition-delay: 0.25s;
+}
+button.roll-text:hover {
+  background: var(--gray);
+  color: var(--light);
+  span {
+    --m: calc(var(--font-size) * -1);
+  }
+}
+/* BUTTON ANIMATION ENDS */

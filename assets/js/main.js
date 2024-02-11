@@ -36,5 +36,10 @@ window.addEventListener("scroll", () => {
     (position) => position.top < window.innerHeight && position.bottom >= 0
   );
 });
-
-// gallery
+// button animation
+document.querySelectorAll(".roll-text").forEach((button) => {
+  button.innerHTML =
+    "<div><span>" +
+    button.textContent.trim().split("").join("</span><span>") +
+    "</span></div>";
+});
