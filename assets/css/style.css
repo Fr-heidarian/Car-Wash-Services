@@ -264,7 +264,7 @@ p {
   bottom: 8rem;
   left: 0rem;
 }
-/* GALLERY SECTION */
+/* GALLERY SECTION STARTS*/
 #gallery .section-title h1::before {
   top: 1.15rem;
   right: 26.5rem;
@@ -356,6 +356,48 @@ p {
     transform: translate(0, 0);
   }
 }
+
+/* Hover Effect */
+.card-hover {
+  position: relative;
+}
+.card-hover .image-box img {
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+.card-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+.card-hover:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+.card-hover:hover::after {
+  opacity: 1;
+  inset: 25px;
+}
+.card-hover .content {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card-hover:hover .content,
+.card-hover:hover .content p {
+  opacity: 1;
+  color: var(--light);
+}
+
+/* GALLERY SECTION ENDS */
 
 /* BUTTON ANIMATION STARTS */
 button.roll-text {
